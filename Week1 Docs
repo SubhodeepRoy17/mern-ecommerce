@@ -1,0 +1,115 @@
+🛒 MERN Stack E-commerce Platform
+
+Week 1 – Full-Stack Intern Project Setup
+
+📌 Project Overview
+
+Project Name: MERN Stack E-commerce Platform
+
+Internship Duration: Week 1
+
+Team: Full-Stack Development Interns
+
+Tech Stack: React.js, Node.js, Express.js, MongoDB
+
+🎯 Objectives Achieved
+✅ 1. Project Structure Setup
+
+A scalable and maintainable project structure was created following industry best practices.
+
+mern-ecommerce-project/
+├── frontend/            # React.js application
+├── backend/             # Node.js & Express server
+├── database/            # MongoDB configurations
+├── docs/                # Project documentation
+├── .gitignore           # Git ignore rules
+├── README.md            # Project overview & instructions
+└── docker-compose.yml   # Docker container configuration
+
+✅ 2. Technology Stack Finalized
+Layer	Technology	Version	Purpose
+Frontend	React.js	18.2.0	UI Development
+Backend	Node.js / Express	18.x / 4.18.2	REST API Server
+Database	MongoDB	6.0+	NoSQL Database
+Version Control	Git / GitHub	—	Source Code Management
+Package Manager	npm	9.x+	Dependency Management
+🛠️ Detailed Implementation
+📦 Frontend Setup (React.js)
+Installed Dependencies
+{
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-router-dom": "^6.22.0",
+  "axios": "^1.6.0",
+  "redux": "^4.2.1",
+  "react-redux": "^8.1.3",
+  "@reduxjs/toolkit": "^1.9.7"
+}
+
+Frontend Project Structure
+frontend/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page-level components
+│   ├── store/          # Redux store configuration
+│   ├── services/       # API service handlers
+│   ├── utils/          # Utility functions
+│   ├── App.jsx
+│   └── index.jsx
+└── package.json
+
+⚙️ Backend Setup (Node.js & Express)
+Installed Dependencies
+{
+  "express": "^4.18.2",
+  "mongoose": "^7.6.0",
+  "cors": "^2.8.5",
+  "dotenv": "^16.3.1",
+  "bcryptjs": "^2.4.3",
+  "jsonwebtoken": "^9.0.2",
+  "express-validator": "^7.0.1"
+}
+
+Backend Project Structure
+backend/
+├── src/
+│   ├── config/        # Configuration files
+│   ├── controllers/   # Request handlers
+│   ├── models/        # MongoDB schemas
+│   ├── routes/        # API routes
+│   ├── middleware/    # Custom middleware
+│   ├── utils/         # Helper utilities
+│   └── server.js      # Application entry point
+├── package.json
+└── .env.example
+
+🗄️ Database Configuration (MongoDB)
+Option 1: MongoDB Atlas (Cloud)
+
+Created cluster: mern-cluster
+
+Configured IP whitelist
+
+Generated MongoDB connection string
+
+Option 2: Local MongoDB using Docker
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+    volumes:
+      - mongo_data:/data/db
+
+🚀 Status
+
+✔️ Project initialization completed
+✔️ Frontend & backend structure finalized
+✔️ Database setup configured
+✔️ Ready for Week 2 feature development
