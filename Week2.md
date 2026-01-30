@@ -1,8 +1,5 @@
-# 📅 Week 2 Tasks – Full Stack Interns
+# 📅 Week 2 Task
 ## Payroll SaaS Platform (Planning & Design Phase)
-
-> **Note:** Week 2 is focused on planning, architecture, and system design. Heavy coding is not expected.
-
 ---
 
 ## 1️⃣ Database Schema Design
