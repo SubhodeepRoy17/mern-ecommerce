@@ -259,11 +259,6 @@ mongod
 
 ---
 
-**Demo Time: 15 minutes**  
-**You've got this! 🚀**
-
----
-
 For detailed information:
 - See **README.md** for overview
 - See **API_DOCUMENTATION.md** for API details  
