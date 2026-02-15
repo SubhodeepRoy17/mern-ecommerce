@@ -1,0 +1,32 @@
+{
+  "_id": ObjectId("..."),
+  "employeeId": ObjectId("..."),
+  "month": "2026-02",
+  "basicSalary": 50000,
+  "hra": 6000,                   
+  "da": 4000,                     
+  "grossSalary": 60000,           
+  "incomeTax": 12000,             
+  "providentFund": 5000,          
+  "deductions": 17000,          
+  "netSalary": 43000,            
+  "taxId": "RAJ001XYZ",
+  "status": "calculated",
+  "createdAt": "2026-02-13T...",
+  "updatedAt": "2026-02-13T..."
+}
+
+module.exports = {
+  calculationFormula: {
+    allowances: {
+      hra: 'Basic * 0.12',
+      da: 'Basic * 0.08'
+    },
+    deductions: {
+      incomeTax: 'Gross * 0.20',
+      providentFund: 'Basic * 0.10'
+    },
+    gross: 'Basic + HRA + DA',
+    netSalary: 'Gross - (IncomeTax + PF)'
+  }
+};
